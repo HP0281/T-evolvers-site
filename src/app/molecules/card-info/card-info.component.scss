@@ -1,0 +1,70 @@
+@import "../../../settings/colors.scss";
+@import "../../../settings/fonts.scss";
+
+section{
+    mat-card{
+        background-color: white;
+        width: 588px;
+        height: 478px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.06);
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        mat-card-title-group{
+            display: flex;
+            flex-direction: column;
+            margin: 14px 29px;
+            h3{
+                color: $gray-4;
+                font-family: $titillium-font;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40.192px; 
+                margin: 0;
+            }
+
+            span{
+                color: $blue-2;
+                font-family: $titillium-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+        mat-card-content{
+            
+            margin: 0 29px;
+            ul{
+                padding-left: 30px;
+            }
+            li{
+                color: $gray-7;
+                font-family: $titillium-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 33px;
+            }
+            app-text-container{
+                color: $gray-7;
+                padding-top: 0;
+            }
+            h4{
+                color: $blue-1;
+                font-family: $titillium-font;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 33px;
+                margin: 0;
+            }
+        }
+    }
+}
+.noMargin{
+    padding-top: 0 !important;
+}

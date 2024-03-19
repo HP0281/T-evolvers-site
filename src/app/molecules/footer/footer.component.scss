@@ -1,0 +1,56 @@
+@import "../../../settings/colors.scss";
+@import "../../../settings/fonts.scss";
+
+footer{
+    padding: 31px 75px;
+    background-color: $blue-2;
+    max-height: 362px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    .networks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .links{
+            width: 158.8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            img{
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+            }
+        }
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        app-text-container{
+            width: 454px;
+            margin-top: 40px;
+        }
+        .link{
+            margin-top: 40px;
+            h4{
+                color: #FFF;
+                font-family: $titillium-font;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            li{
+                color: #FFF;
+                font-family: $heebo-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 33px;
+                cursor: pointer; 
+            }
+        }
+    }
+}

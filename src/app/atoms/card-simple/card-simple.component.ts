@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-card-simple',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule],
   templateUrl: './card-simple.component.html',
   styleUrl: './card-simple.component.scss'
 })
 export class CardSimpleComponent {
+
+  @Input() icon = "" ;
+  @Input() title = "";
+  @Input() description = "";
 
 }

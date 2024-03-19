@@ -1,0 +1,9 @@
+<p [ngClass]="classStyle ? classStyle : ''"> 
+    @for (text of description; track $index) {
+        @if (text.style == 'blod') {
+            <strong>{{text.text}}</strong>
+        }@else{
+            <span>{{text.text}}</span>
+        }
+    }
+</p>

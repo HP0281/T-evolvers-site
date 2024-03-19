@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./settings/fonts.scss";
+@import "./settings/colors.scss";
 
 
 html, body { height: 100%; }
@@ -7,9 +8,9 @@ body { margin: 0;}
 
 p{
     font-family: $heebo-font;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 33px;
-    width: 400;
+    font-weight: 400;
 }
 
 h1, h2, h3,h4,h5 {
@@ -28,4 +29,60 @@ h2{
     font-weight: 700;
     line-height: 52px;
     letter-spacing: -0.5px;
+}
+.text-card{
+    
+        strong{
+            font-size: 23px;
+            font-family: $titillium-font;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            color: $gray-6;
+        }
+        span{
+            font-family: $titillium-font;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 44px;
+            color: $gray-6;
+        }
+    
+}
+.text{
+    strong{
+        font-size: 18px;
+        font-family: $titillium-font;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        
+    }
+    span{
+        font-family: $titillium-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 33px;
+    }
+   
+}
+.footer-text{
+    strong{
+        color: #FFF;
+        font-family: $titillium-font;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    span{
+        color: #FFF;
+        font-family: $titillium-font;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 48px; 
+    }
 }

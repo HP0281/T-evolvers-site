@@ -1,0 +1,41 @@
+<section>
+    <mat-card class="example-card" >
+        <img mat-card-image [src]="img" alt="">
+        <div class="content">
+            <div>
+                <mat-card-header>
+                    <mat-card-title-group>
+                        @if(title != ''){
+                            <mat-card-title>
+                                <h3>{{title}}</h3>
+                            </mat-card-title>
+                        }
+                        
+                        @if (highlighted != '') {
+                            <span class="link">{{highlighted}}</span>
+                        }
+                    </mat-card-title-group>
+                </mat-card-header>
+            </div>
+            <div>
+                <mat-card-content [ngClass]="{'noMargin': isList == false, 'margin': isList}">
+                    @if(subtitle != ''){
+                        <h4>{{subtitle}}</h4>
+                    }
+                    @if (isList) {
+                        <ul>
+                        @for (item of description; track $index) {
+                            <li>{{item.text}}</li>
+                        }
+                        </ul>
+                    }@else {
+                        <app-text-container
+                        [description]="description"
+                        classStyle="text"
+                        ></app-text-container>
+                    }
+                </mat-card-content>
+            </div>
+        </div>
+    </mat-card>
+</section>

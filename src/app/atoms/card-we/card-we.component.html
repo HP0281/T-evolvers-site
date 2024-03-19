@@ -1,17 +1,18 @@
 <section>
-    <mat-card class="example-card">
+    <mat-card class="example-card" [ngClass]="style == 'blue' ? 'blue' : 'light'">
         <mat-card-header>
           <mat-card-title-group>
             <mat-card-title>
                 <div class="icon">
                     <img [src]="icon" alt="">
+                    <h4>{{title}}</h4>
                 </div>
             </mat-card-title>
-            <mat-card-subtitle><h4>{{title}}</h4></mat-card-subtitle>
           </mat-card-title-group>
         </mat-card-header>
         <mat-card-content>
-          <p>{{description}}</p>
+            <app-text-container [description]="description"
+            classStyle="text"></app-text-container>
         </mat-card-content>
     </mat-card>
 </section>
