@@ -1,7 +1,8 @@
 <h1>Transformación y Evolución</h1>
-<app-card-simple icon="../../assets/icons/code.svg" title="Desarrollo de software"
-  description="Experticia en lenguajes de programación y adaptación a los frameworks que se requieran, orientados al clean-code y clean-architecture."></app-card-simple>
-
+<div class="row">
+  <app-card-simple icon="../../assets/icons/code.svg" title="Desarrollo de software"
+    description="Experticia en lenguajes de programación y adaptación a los frameworks que se requieran, orientados al clean-code y clean-architecture."
+    class="col-xl-4 col-sm-12"></app-card-simple>
   <app-card-we icon="../../assets/icons/Vector.svg"
     title="Misión"
     [description]="[{text: 'En ', style: ''},
@@ -9,8 +10,12 @@
           {text: 'proporcionando soluciones personalizadas y líderes en la industria. ', style: ''},
           {text: 'Impulsamos el crecimiento ', style: 'blod'},
           {text: 'de nuestros clientes mediante desarrollo de software, DevOps y ', style: ''},
-          {text: 'soluciones IoT innovadoras.', style: 'blod'}]"></app-card-we>
-<app-card-banner img="../../assets/images/Rectangle30.png"
+          {text: 'soluciones IoT innovadoras.', style: 'blod'}]"
+          class="col-xl-4 col-sm-12"></app-card-we>
+</div>
+
+<div class="row">
+  <app-card-banner img="../../assets/images/Rectangle30.png"
   title="Enfocados a los últimos estándares"
   subtitle="Automatización y Desarrollo"
   [description]="[{text:'Nacimos como una compañia que busca ', style: ''},
@@ -19,17 +24,20 @@
     {text:'mejores estrategias, ', style: 'blod'},
     {text:'herramientas y procesos, entendiendo siempre el contexto del cliente y enlazarlo con la eficacia. Nuestra primera opción siempre será el OpenSource avalado por comunidad, ', style: ''},
     {text:'robustez, adherencia y complejidad.', style:'blod'}]"
-    >
+    class="col-xl-11 col-sm-12">
 
 </app-card-banner>
-<app-card-info img="../../assets/images/Rectangle24.png"
+</div>
+<div class="row">
+  <app-card-info img="../../assets/images/Rectangle24.png"
   title="Sobre DevOps"
   highlighted="Generalidades de estos procesos"
   [isList]="true"
   [description]="[{text:'Despliegue continuo'},
       {text:'Métricas'},
       {text:'Contenedores'},
-      {text:'Curso Azure DevOps'}]"></app-card-info>
+      {text:'Curso Azure DevOps'}]"
+      class="col-xl-6 col-sm-12"></app-card-info>
 
   <app-card-info img="../../assets/images/img1.png"
   title="Desarrollo de software"
@@ -38,6 +46,8 @@
       {text:'experimentado equipo de Desarrollo Fullstack. ', style: 'blod'},
       {text:'Diseñamos y construimos tanto la arquitectura robusta del Backend como la interfaz atractiva del Frontend, garantizando un ', style:''},
       {text:' rendimiento eficaz y una experiencia de usuario excepcional ', style:'blod'},
-      {text:'en todas las capas de tu aplicación.', style:''}]"></app-card-info>
-<app-footer></app-footer>
+      {text:'en todas las capas de tu aplicación.', style:''}]"
+      class="col-xl-6 col-sm-12"></app-card-info>
+</div>
+  <app-footer></app-footer>
 <router-outlet />

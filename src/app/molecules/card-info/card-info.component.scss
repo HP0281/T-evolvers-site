@@ -4,8 +4,8 @@
 section{
     mat-card{
         background-color: white;
-        width: 588px;
-        height: 478px;
+        max-width: 588px;
+        min-height: 478px;
         border-radius: 30px;
         box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.06);
         .content{

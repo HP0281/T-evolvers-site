@@ -4,8 +4,8 @@
 mat-card{
     background-color: white;
     border-radius: 30px;
-    width: 366px;
-    height: 399px;
+    max-width: 366px;
+    min-height: 399px;
     padding: 16px;
     .icon{
         display: flex;
