@@ -29,6 +29,7 @@ footer{
         }
         .link{
             margin-top: 40px;
+            min-width: 215px;
             h4{
                 color: #FFF;
                 font-family: $titillium-font;
@@ -47,6 +48,22 @@ footer{
                 line-height: 33px;
                 cursor: pointer; 
             }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+              
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-menu{
+        app-text-container{
+            text-align: center;
+        }
+        .link{
+            text-align: center;
         }
     }
 }
