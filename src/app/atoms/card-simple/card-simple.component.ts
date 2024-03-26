@@ -13,5 +13,6 @@ export class CardSimpleComponent {
   @Input() icon = "" ;
   @Input() title = "";
   @Input() description = "";
+  @Input() backgroundImage = true;
 
 }

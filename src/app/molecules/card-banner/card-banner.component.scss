@@ -13,14 +13,14 @@ mat-card{
     }
     img{
         max-width: 393px;
-        height: 495px;
+        min-height: 100%;
         border-radius: 30px 0px 0px 30px;
     }
     div.content{
         padding: 38px 34px 0px;
     }
     .divider{
-        height: 100%;
+        min-height: 100%;
         min-width: 15px;
         background-color: $blue-1;
     }
@@ -51,7 +51,15 @@ mat-card{
         display: flex;
         flex-direction: column;
         img{
-            border-radius: 0px 30px 0px 0px;
+            border-radius: 30px 30px 0px 0px;
+            max-height: 228px;
         }
+        .divider{
+            min-height: 15px;
+            min-width: 100%;
+        }
+    }
+    .reverse{
+        flex-direction: column;
     }
 }
