@@ -2,7 +2,9 @@
 @import "../../../settings/fonts.scss";
 
 section{
+    height: 100%;
     mat-card{
+        height: 100%;
         background-color: white;
         max-width: 588px;
         min-height: 478px;
@@ -16,7 +18,7 @@ section{
         mat-card-title-group{
             display: flex;
             flex-direction: column;
-            margin: 14px 29px;
+            margin: 0 29px 0;
             h3{
                 color: $gray-4;
                 font-family: $titillium-font;
@@ -38,6 +40,7 @@ section{
         mat-card-content{
             
             margin: 0 29px;
+            padding-top: 0;
             ul{
                 padding-left: 30px;
             }

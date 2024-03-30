@@ -21,3 +21,42 @@
         line-height: 33px;
     }
 }
+.container{
+    margin: 10px 120px;
+    h2{
+        text-align: center;
+    }
+}
+.skills{
+    h6{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        strong{
+            font-weight: 700;
+        }
+    }
+    .skill-1{
+        text-align: right;
+        padding-right: 32px;
+    }
+    .skill-2{
+        text-align: center;
+    }
+    .skill-3{
+        text-align: left;
+        padding-left: 32px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+     margin: 0;
+    }
+    .skills{
+        text-align: center;
+        .skill-1, .skill-2, .skill-3{
+            text-align: center;
+        }
+    }
+ }
