@@ -1,25 +1,24 @@
 <div class="row">
+    <app-banner title="Transformamos el proceso de software" img="banner-jobs.png" labelButton="Portal de empleos"
+        (action)="jobsPortal($event)">
+    </app-banner>
+
+</div>
+<div class="row">
     <h2>Empleos</h2>
 </div>
 <div class="row">
-    <app-card-banner img="../../assets/images/img2.png"
-    title="Ser T-Lover"
-    [divider]="true"
-    [description]="[{text:'Implica ', style: ''},
+    <app-card-banner img="../../assets/images/img2.png" title="Ser T-Lover" [divider]="true" [description]="[{text:'Implica ', style: ''},
       {text:'abrazar la revolución digital ', style: 'blod'},
       {text:'en las industrias y demostrar que unidos podemos forjar un futuro más brillante mediante la tecnología, la sostenibilidad y la innovación, al tiempo que perseguimos nuestros objetivos personales. Estamos ', style: ''},
       {text:'comprometidos con el cambio y el progreso, ', style: 'blod'},
       {text:'siempre en busca de soluciones que impacten positivamente ', style: ''},
-      {text:'en el mundo y en nuestras vidas.', style:'blod'}]"
-      class="col-xl-12 col-sm-12">
-  
-  </app-card-banner>
+      {text:'en el mundo y en nuestras vidas.', style:'blod'}]" class="col-xl-12 col-sm-12">
+
+    </app-card-banner>
 </div>
 <div class="row">
-    <app-card-banner img="../../assets/images/img3.png"
-    title="Convocatorias"
-    [divider]="true"
-    [description]="[{text:'En ', style: ''},
+    <app-card-banner img="../../assets/images/img3.png" title="Convocatorias" [divider]="true" [description]="[{text:'En ', style: ''},
       {text:'T-Evolvers, ', style: 'blod'},
       {text:'nos apasiona la ', style: ''},
       {text:'innovación constante ', style: 'blod'},
@@ -38,10 +37,8 @@
       {text:'Ofrecemos beneficios:', style:'blod'},
       {text:'omo contratación con todas las prestaciones, contrato indefinido, plan de carrera, formación continua y más. Únete a nuestra comunidad de innovadores y juntos ', style:''},
       {text:'crearemos un emocionante futuro ', style:'blod'},
-      {text:'en DevOps, desarrollo y automatización.', style:''}]"
-      class="col-xl-12 col-sm-12"
-      [invert]="true">
-  
+      {text:'en DevOps, desarrollo y automatización.', style:''}]" class="col-xl-12 col-sm-12" [invert]="true">
+
     </app-card-banner>
 </div>
 <div class="row">
@@ -49,54 +46,42 @@
         <div class="title">
             <img src="../../../assets/images/logo.svg" alt="">
             <h3 class="title-2">¿Listo para contribuir al éxito de una empresa revolucionaria?</h3>
-            <p>Si quieres hacer parte de esta <strong>compañía extraordinaria</strong> te recomendamos explorar los siguientes enlaces.</p>
+            <p>Si quieres hacer parte de esta <strong>compañía extraordinaria</strong> te recomendamos explorar los
+                siguientes enlaces.</p>
         </div>
     </div>
 </div>
 <div class="row container">
     <div class="col-xl-6 col-sm-12 card">
         <app-card-info img="../../assets/images/img4.png"
-            title="Sobre las pruebas de software en el contexto del desarrollo de software"
-            [isList]="true"
+            title="Sobre las pruebas de software en el contexto del desarrollo de software" [isList]="true"
             [description]="[{text:'Foundation Level - Técnicas ', style: ''},
                 {text:' ¿Qué son los riesgos del proyecto y de producto?', style: ''},
                 {text:'Técnicas de caja negra', style:''},
-                {text:'Marcos de trabajo de pruebas', style:'blod'}]"
-                ></app-card-info>
+                {text:'Marcos de trabajo de pruebas', style:'blod'}]"></app-card-info>
     </div>
     <div class="col-xl-6 col-sm-12 card">
-        <app-card-info img="../../assets/images/img5.png"
-            title="Sobre DevOps"
-            highlighted="Generalidades de estos procesos"
-            [isList]="true"
-            [description]="[{text:'Despliegue continuo'},
+        <app-card-info img="../../assets/images/img5.png" title="Sobre DevOps"
+            highlighted="Generalidades de estos procesos" [isList]="true" [description]="[{text:'Despliegue continuo'},
                 {text:'Métricas'},
                 {text:'Contenedores'},
-                {text:'Curso Azure DevOps'}]"
-                ></app-card-info>
+                {text:'Curso Azure DevOps'}]"></app-card-info>
     </div>
 </div>
 <div class="row container">
     <div class="col-xl-6 col-sm-12 card-1">
         <app-card-info img="../../assets/images/img5.png"
             title="Cursos que te podrían servir para ser un gran desarrollador de software"
-            highlighted="Sobre la Ingeniería de Software"
-            [isList]="true"
-            [description]="[{text:'Estructuras de datos'},
+            highlighted="Sobre la Ingeniería de Software" [isList]="true" [description]="[{text:'Estructuras de datos'},
                 {text:'Curso bases de datos'},
                 {text:'Fundamentos ingenieria de software'},
-                {text:'Diseño del software'}]"
-                ></app-card-info>
+                {text:'Diseño del software'}]"></app-card-info>
     </div>
     <div class="col-xl-6 col-sm-12 card-1">
-        <app-card-info img="../../assets/images/img7.png"
-            title="Sobre DevOps"
-            highlighted="Generalidades de estos procesos"
-            [isList]="true"
-            [description]="[{text:'Automatización de pruebas de software'},
+        <app-card-info img="../../assets/images/img7.png" title="Sobre DevOps"
+            highlighted="Generalidades de estos procesos" [isList]="true" [description]="[{text:'Automatización de pruebas de software'},
                 {text:'Fundamentos pruebas continuas'},
                 {text:'Software testing fundamentals'},
-                {text:'Modelo de calidad de software'}]"
-                ></app-card-info>
+                {text:'Modelo de calidad de software'}]"></app-card-info>
     </div>
 </div>

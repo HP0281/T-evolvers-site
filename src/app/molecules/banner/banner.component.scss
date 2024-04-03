@@ -4,9 +4,20 @@
 .container {
     width: 100vw;
     height: 546px;
-    background: lightblue;
     display: flex;
 
+}
+
+.container2 {
+    height: 344px;
+}
+
+.content2 {
+    background: $blue-2 !important;
+
+    .title {
+        font-size: 55px;
+    }
 }
 
 .content {
@@ -17,7 +28,8 @@
     justify-content: center;
 
     .info-content {
-        width: 90%;
+        min-width: 70%;
+        max-width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -50,10 +62,11 @@
 
 }
 
-.action{
-    padding: 25px 0;
+.action {
+    padding: 7% 0;
 }
-.action-button{
+
+.action-button {
     font-family: $titillium-font;
     font-size: 25px;
     font-weight: 600;
@@ -61,5 +74,28 @@
     border-radius: 30px;
     background: $blue-2 !important;
     height: 60px;
+}
 
+.action-button2 {
+    font-family: $titillium-font;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    background: $blue-1 !important;
+    height: 60px;
+
+}
+
+.img-content2 {
+    border-bottom: 15px solid $blue-1;
+}
+
+.subtitle {
+    font-family: $titillium-font;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 0;
 }
