@@ -1,12 +1,15 @@
 @import "../../../settings/colors.scss";
 
-
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 mat-card{
     background-color: white;
     border-radius: 30px;
-    max-width: 366px;
-    min-height: 399px;
     padding: 16px;
+    height: 100%;
     .icon{
         display: flex;
         align-items: center;

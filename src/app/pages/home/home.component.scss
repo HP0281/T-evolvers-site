@@ -26,6 +26,17 @@
     h2{
         text-align: center;
     }
+    .we{
+        height: 481px;
+    }
+    .divider{
+        display: flex;
+        width: 100%;
+        mat-divider{
+            width: 100%;
+            border-top-color: rgba(37, 41, 49, 0.20);
+        }
+    }
 }
 .skills{
     h6{
@@ -48,15 +59,30 @@
         padding-left: 32px;
     }
 }
+.skills-card{
+    margin-bottom: 64px;
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .container{
      margin: 0;
+     .we{
+        font-size: 20px;
+     }
     }
     .skills{
         text-align: center;
         .skill-1, .skill-2, .skill-3{
             text-align: center;
         }
+    }
+    .skills-card{
+        margin-bottom: 30px;
+    }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .container{
+        margin: 30px 10%;
     }
  }

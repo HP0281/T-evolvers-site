@@ -1,22 +1,24 @@
-<div class="row">
+<div class="row container">
     <app-banner subtitle="Servicios" title="DevOps" img="banner-devops.png">
     </app-banner>
 
 </div>
-<div class="row">
-    <app-card-banner img="../../assets/images/img13.png"
-    [divider]="true"
-    [description]="[{text:'Ofrecemos  ', style: ''},
-      {text:'Ingenieros de Software con experiencia  ', style: 'blod'},
-      {text:'y capacidades de inmersión en equipos que promuevan DevSecOps como un habilitador de buenas prácticas, métricas, mejoramiento de procesos y por sobretodo, ', style: ''},
-      {text:'generación de valor al negocio ', style: 'blod'},
-      {text:'por medio de entregas ágiles, seguras y oportunas, generando tranquilidad con resiliencia, feedback oportuno y control de lineamientos empresariales.', style: ''},
-      ]"
-      class="col-xl-12 col-sm-12">
-  
-  </app-card-banner>
+<div class="row container">
+    <div class="col-xl-12">
+        <app-card-banner img="../../assets/images/img13.png"
+        [divider]="true"
+        [description]="[{text:'Ofrecemos  ', style: ''},
+          {text:'Ingenieros de Software con experiencia  ', style: 'blod'},
+          {text:'y capacidades de inmersión en equipos que promuevan DevSecOps como un habilitador de buenas prácticas, métricas, mejoramiento de procesos y por sobretodo, ', style: ''},
+          {text:'generación de valor al negocio ', style: 'blod'},
+          {text:'por medio de entregas ágiles, seguras y oportunas, generando tranquilidad con resiliencia, feedback oportuno y control de lineamientos empresariales.', style: ''},
+          ]"
+          >
+      
+        </app-card-banner>
+    </div>
 </div>
-<div class="row title-2">
+<div class="row container title-2">
     <h3>Equipos con toda la capacidad y experiencia para resolver retos en:</h3>
 </div>
 <div class="row container">
@@ -40,7 +42,7 @@
     </div>
 </div>
 <div class="row container">
-    <div class="col-xl-6 col-sm-12">
+    <div class="col-xl-6 col-sm-12 cards">
         <app-card-info img="../../assets/images/img14.png"
         title="Integración Continua (CI)"
         subtitle="Ingenieros de Integración Continua (CI)"
@@ -48,7 +50,7 @@
            ]"
             ></app-card-info>
     </div>
-    <div class="col-xl-6 col-sm-12">
+    <div class="col-xl-6 col-sm-12 cards">
         <app-card-info img="../../assets/images/img15.png"
         title="Despliegue Continuo (CD)"
         subtitle="Arquitectos de Despliegue Continuo (CD)"
@@ -57,7 +59,7 @@
     </div>
 </div>
 <div class="row container">
-    <div class="col-xl-6 col-sm-12">
+    <div class="col-xl-6 col-sm-12 cards">
         <app-card-info img="../../assets/images/img16.png"
         title="Automatización de Infraestructura"
         subtitle="Especialistas en Automatización de Infraestructura"

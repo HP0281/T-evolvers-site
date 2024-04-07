@@ -1,5 +1,5 @@
 .container{
-    margin: 10px 87px;
+    margin: 10px 12%;
     .cards{
         height: 393px;
     }
@@ -17,6 +17,9 @@
 @media screen and (max-width: 800px) {
    .container{
     margin: 0;
+    .card{
+        width: 100%;
+    }
    }
    .title-2{
     h3{
