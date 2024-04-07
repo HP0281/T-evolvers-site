@@ -2,11 +2,12 @@
 @import "../../../settings/fonts.scss";
 
 
-
+[class*="col-"] {
+    padding: 0;
+  }
 mat-card{
     display: flex;
     flex-direction: row;
-    max-width: 1244px;
     min-height: 495px;
     border-radius: 30px;
     background-color: #FFF;
@@ -48,7 +49,7 @@ mat-card{
     flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     mat-card{
         display: flex;
         flex-direction: column;
@@ -66,7 +67,7 @@ mat-card{
         flex-direction: column;
     }
 }
-@media screen and (min-width:800px) {
+@media screen and (min-width:1000px) {
     section{
         display: flex;
         flex-direction: row;

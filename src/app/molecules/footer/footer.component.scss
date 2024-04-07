@@ -29,7 +29,6 @@ footer{
         }
         .link{
             margin-top: 40px;
-            min-width: 215px;
             h4{
                 color: #FFF;
                 font-family: $titillium-font;
@@ -57,13 +56,19 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .footer-menu{
         app-text-container{
             text-align: center;
         }
         .link{
             text-align: center;
+        }
+    }
+    footer{
+        .networks{
+            justify-content: center;
+            .links{display: none;}
         }
     }
 }
