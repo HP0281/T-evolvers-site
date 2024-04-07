@@ -1,24 +1,24 @@
 @import './fonts.scss';
 @import './colors.scss';
-@use '@angular/material' as mat;
+// @use '@angular/material' as mat;
 
-@import '~@angular/material/theming';
+// @import '~@angular/material/theming';
 
-// Por ejemplo, Arial para párrafos
+// // Por ejemplo, Arial para párrafos
 
-// Sobrescribe las variables de tipografía de Angular Material para los encabezados
-$mat-typography-headline-1: mat-typography-level(67px, $titillium-font); // Tamaño y fuente para <h1>
-$mat-typography-headline-2: mat-typography-level(20px, $titillium-font); // Tamaño y fuente para <h2>
-$mat-typography-headline-3: mat-typography-level(18px, $titillium-font); // Tamaño y fuente para <h3>
-$mat-typography-headline-4: mat-typography-level(16px, $titillium-font); // Tamaño y fuente para <h4>
-$mat-typography-headline-5: mat-typography-level(14px, $titillium-font); // Tamaño y fuente para <h5>
-$mat-typography-headline-6: mat-typography-level(12px, $titillium-font); // Tamaño y fuente para <h6>
+// // Sobrescribe las variables de tipografía de Angular Material para los encabezados
+// $mat-typography-headline-1: mat-typography-level(67px, $titillium-font); // Tamaño y fuente para <h1>
+// $mat-typography-headline-2: mat-typography-level(20px, $titillium-font); // Tamaño y fuente para <h2>
+// $mat-typography-headline-3: mat-typography-level(18px, $titillium-font); // Tamaño y fuente para <h3>
+// $mat-typography-headline-4: mat-typography-level(16px, $titillium-font); // Tamaño y fuente para <h4>
+// $mat-typography-headline-5: mat-typography-level(14px, $titillium-font); // Tamaño y fuente para <h5>
+// $mat-typography-headline-6: mat-typography-level(12px, $titillium-font); // Tamaño y fuente para <h6>
 
-// Sobrescribe las variables de tipografía de Angular Material para los párrafos
-$mat-typography-body-1: mat-typography-level(16px, $heebo-font); // Tamaño y fuente para párrafos
-$mat-typography-body-2: mat-typography-level(14px, $heebo-font); // Otra opción para párrafos
+// // Sobrescribe las variables de tipografía de Angular Material para los párrafos
+// $mat-typography-body-1: mat-typography-level(16px, $heebo-font); // Tamaño y fuente para párrafos
+// $mat-typography-body-2: mat-typography-level(14px, $heebo-font); // Otra opción para párrafos
 
-// Aplica la configuración de tipografía
-@include angular-material-typography($mat-typography);
+// // Aplica la configuración de tipografía
+// @include angular-material-typography($mat-typography);
 
 

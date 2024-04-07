@@ -1,0 +1,22 @@
+<div class="container" [ngClass]="{'container2':!description}">
+    <div class="content" [ngClass]="{'content2':!description}">
+        <div class="info-content">
+            @if (subtitle) {
+                <h3 class="subtitle">{{subtitle}}</h3>
+            }
+            <h1 class="title">{{title}}</h1>
+            <div class="description">
+                {{description}}
+            </div>
+            @if(labelButton){
+
+                <div class="action">
+                    <button  mat-flat-button class="action-button" [ngClass]="{'action-button2':!description}" (click)="onAction($event)">{{labelButton}}</button>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="img-content" [ngClass]="{'img-content2':!description}">
+            <img [src]="img" alt="img-banner">
+    </div>
+</div>
