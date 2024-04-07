@@ -18,5 +18,5 @@ import { CardInfoComponent } from './molecules/card-info/card-info.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'TE001_ANGULARPAGE_FRONT';
+  title = 'T-Evolvers';
 }
