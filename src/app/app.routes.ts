@@ -17,5 +17,6 @@ export const routes: Routes = [
     {path:'services/automation', component: ServicesContinuosTestAutomatiionComponent},
     {path:'services/iot', component: ServicesIOTComponent},
     {path:'services/observability', component: ServicesObservabilityComponent},
-    {path:'services/data', component: ServicesDataEngineeringComponent}];
+    {path:'services/data', component: ServicesDataEngineeringComponent},
+    {path:'**', redirectTo: 'home'}];
     
