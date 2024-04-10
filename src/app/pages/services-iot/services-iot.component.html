@@ -1,3 +1,4 @@
+@defer (on viewport) {
 <div class="row">
     <app-banner subtitle="Servicios" title="IOT Internet Of Things" img="banner-iot.png">
     </app-banner>
@@ -21,6 +22,12 @@
 <div class="row container title-2">
     <h3>Equipos con toda la capacidad y experiencia para resolver retos en:</h3>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row container">
     <div class="col-xl-4 col-sm-12 col-md-6 cards">
         <app-card-simple icon="../../assets/images/logo-blue.svg" title="Desarrollo de Hardware Especializado"
@@ -38,6 +45,12 @@
             [backgroundImage]="false"></app-card-simple>
     </div>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row title-3">
     <h4>Maximiza tus Activos Digitales con Nuestros Expertos</h4>
 </div>
@@ -65,3 +78,8 @@
             ></app-card-info>
     </div>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
