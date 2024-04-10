@@ -86,3 +86,8 @@
         margin: 30px 10%;
     }
  }
+ .img-margin-top{
+        .mat-mdc-card-image{
+            object-position: 0 -100px;
+        }
+ }
