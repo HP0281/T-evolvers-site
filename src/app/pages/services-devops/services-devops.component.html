@@ -1,3 +1,4 @@
+@defer (on viewport) {
 <div class="row">
     <app-banner subtitle="Servicios" title="DevOps" img="banner-devops.png">
     </app-banner>
@@ -21,6 +22,12 @@
 <div class="row container title-2">
     <h3>Equipos con toda la capacidad y experiencia para resolver retos en:</h3>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row container">
     <div class="col-xl-4 col-sm-12 col-md-6 card">
         <app-card-simple icon="../../assets/images/logo-blue.svg"
@@ -41,6 +48,12 @@
             [backgroundImage]="false"></app-card-simple>
     </div>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row container">
     <div class="col-xl-6 col-sm-12 cards">
         <app-card-info img="../../assets/images/cards/card15.png"
@@ -58,6 +71,12 @@
             ></app-card-info>
     </div>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row container">
     <div class="col-xl-6 col-sm-12 cards">
         <app-card-info img="../../assets/images/cards/card17.png"
@@ -67,3 +86,8 @@
             ></app-card-info>
     </div>
 </div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
