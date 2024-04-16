@@ -9,7 +9,7 @@ import {MatMenuModule} from '@angular/material/menu';
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [],
+  imports: [MatMenuModule,MatIconModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })

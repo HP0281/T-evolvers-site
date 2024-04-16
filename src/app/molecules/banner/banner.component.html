@@ -4,7 +4,11 @@
             @if (subtitle) {
                 <h3 class="subtitle">{{subtitle}}</h3>
             }
-            <h1 class="title">{{title}}</h1>
+            <h1 class="title" [ngClass]="{'title-2':title2}">{{title}}</h1>
+            @if(title2){
+
+                <h1 class="title">{{title2}}</h1>
+            }
             <div class="description">
                 {{description}}
             </div>

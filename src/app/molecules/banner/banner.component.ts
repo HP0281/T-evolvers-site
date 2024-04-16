@@ -14,6 +14,7 @@ export class BannerComponent implements OnInit {
   @Input() img = '';
   @Input() description = '';
   @Input() title = '';
+  @Input() title2 = '';
   @Input() subtitle = '';
   @Input() labelButton = '';
   @Output() action = new EventEmitter();

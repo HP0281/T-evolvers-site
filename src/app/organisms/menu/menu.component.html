@@ -10,4 +10,31 @@
         <a href="#">Empleos</a>
         <button class="btn-contact">Contáctenos</button>
     </div>
+    <div class="menu-mobile">
+        <button class="btn-menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="contacto">
+            <img src="assets/icons/envelope-icon.svg" alt="contacto">
+        </button>
+        
+        <button class="btn-menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+            <img src="assets/icons/menu.svg" alt="menu">
+        </button>
+          <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
+            <button mat-menu-item>
+              <span>Home</span>
+            </button>
+            <button mat-menu-item>
+              <span>Servicios</span>
+            </button>
+            <button mat-menu-item>
+              <span>Clientes</span>
+            </button>
+            <button mat-menu-item>
+              <span>Quienes Somos</span>
+            </button>
+            <button mat-menu-item>
+              <span>Empleos</span>
+            </button>
+          </mat-menu>
+    </div>
+
 </nav>

@@ -32,3 +32,53 @@ nav{
     line-height: 24px;
     padding: 7px 22px;
 }
+
+.menu-mobile{
+    display: none;
+    
+    .btn-menu{
+        background: transparent;
+        border: none;
+    }
+
+    .mat-mdc-menu-content{
+       background:$blue-2 !important;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-mobile{
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+
+    .logo{
+        min-width: 170px;
+        max-width: 290px;
+        img{
+            min-width: 125px;
+            max-width: 250px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px)  {
+    
+    .logo{
+        min-width: 170px;
+        max-width: 290px;
+        img{
+            min-width: 125px;
+            max-width: 150px;
+        }
+    }
+
+    .links a{
+        padding: 10px 10px;
+    }
+}
+
