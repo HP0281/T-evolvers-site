@@ -13,7 +13,7 @@ import { PqrsComponent } from './organisms/pqrs/pqrs.component';
   standalone: true,
   imports: [RouterOutlet, CardSimpleComponent, CardWeComponent,
     CardBannerComponent, FooterComponent, CardInfoComponent, CardBannerComponent,
-  MenuComponent, PqrsComponent],
+  MenuComponent,PqrsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
