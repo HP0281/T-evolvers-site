@@ -58,10 +58,20 @@ export class PqrsComponent {
         }
       )
     } else {
-      console.log('sendPqrs with error', this.pqrsForm.value);
-
+      this.pqrsForm.markAllAsTouched();
     }
 
+  }
+
+  public isInvalidField(field:string): string {
+    let message = '';
+    if(this.pqrsForm.get(field)?.errors?.['required'] && this.pqrsForm.get(field)?.touched){
+      message = 'Campo obligatorio';
+    }
+    if(this.pqrsForm.get(field)?.errors?.['pattern'] && this.pqrsForm.get(field)?.touched){
+      message = 'Numero de teléfono invalido';
+    }
+    return message;
 
   }
 
