@@ -1,4 +1,5 @@
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, Input, ViewChild} from '@angular/core';
+
 @Component({
   selector: 'app-swiper',
   standalone: true,

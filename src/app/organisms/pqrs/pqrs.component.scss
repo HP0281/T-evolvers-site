@@ -1,0 +1,99 @@
+@import './../../../settings/colors.scss';
+@import './../../../settings/fonts.scss';
+
+.pqrs-container{
+    width: 100vw;
+    background: $gray-4;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    box-sizing: border-box;
+    min-width: 70%;
+    max-width: 80%;
+
+}
+.content-title{
+    font-family: $titillium-font;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #fff;
+    padding-left: 22px;
+}
+
+.mat-mdc-form-field{
+   width:100%;
+   background: $gary-8;
+   padding: 20px 20px 0;
+   border-radius: 15px;
+
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: $titillium-font;
+}
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: transparent !important;
+}
+
+
+::ng-deep .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+    cursor: pointer;
+    padding-top: 18px;
+}
+
+::ng-deep .mdc-text-field--filled .mdc-floating-label{
+    font-size: 18px !important;
+    font-family: $titillium-font !important;
+}
+
+.term-conditions{
+    min-width: 80%;
+    max-width: 100%;
+    padding: 16px 32px;
+    p{
+        font-size: 14px;
+        color: $gray-5;
+        font-family: $heebo-font;
+    }
+
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 48px;
+}
+.btn-send{
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $titillium-font;
+    height: 60px;
+    padding: 30px;
+    border-radius: 32px;
+    background: $blue-2 !important;
+    text-decoration: underline;
+}
+
+.error{
+    color: #f44336;
+    margin: 0;
+    font-size: 14px;
+    margin-top: -28px;
+    margin-left: 32px;
+}
+
+.row{
+    margin-bottom: 16px;
+}

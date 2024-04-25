@@ -6,14 +6,16 @@ import { CardBannerComponent } from './molecules/card-banner/card-banner.compone
 import { FooterComponent } from './molecules/footer/footer.component';
 import { CardInfoComponent } from './molecules/card-info/card-info.component';
 import { MenuComponent } from './organisms/menu/menu.component';
-import { SwiperComponent } from './organisms/swiper/swiper.component';
+import { PqrsComponent } from './organisms/pqrs/pqrs.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CardSimpleComponent, CardWeComponent,
     CardBannerComponent, FooterComponent, CardInfoComponent, CardBannerComponent,
-  MenuComponent, SwiperComponent],
+    MenuComponent, PqrsComponent,
+    HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

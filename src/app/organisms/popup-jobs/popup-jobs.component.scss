@@ -1,0 +1,18 @@
+@import './../popup-pqrs/popup-pqrs.component.scss';
+
+.action-buttons{
+    justify-content: space-between;
+    padding-bottom: 10px
+}
+
+.btn-close{
+    @extend .btn-next;
+    color: $blue-2 !important;
+    background: white !important;
+    border: solid 1px $blue-2;
+    width: 160px;
+}
+
+.content{
+    text-align: center;
+}

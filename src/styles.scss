@@ -3,7 +3,8 @@
 @import "./settings/colors.scss";
 
 
-html, body { height: 100%; }
+html, body { height: 100%;
+scroll-behavior: smooth; }
 body { margin: 0;}
 
 
@@ -233,4 +234,11 @@ h2{
   .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{
     font-size: 20px !important;
     font-family: $titillium-font !important;
+  }
+  
+
+  .mat-mdc-dialog-container .mdc-dialog__surface{
+    border-radius: 32px !important;
+    padding: 25px !important;
+    background: white !important;
   }
