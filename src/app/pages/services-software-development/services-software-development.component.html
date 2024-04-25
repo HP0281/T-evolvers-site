@@ -47,6 +47,25 @@
     </div>
 }
 @defer (on viewport) {
+<div class="row">
+    <div class="container">
+        <h4>Tus soluciones en las tecnologías y partners líderes del mercado.</h4>
+    </div>
+</div>
+<div class="row container" id="lenguajes">
+    <app-swiper [images]="images" [maxImages]="5"></app-swiper>
+</div>
+<div class="row">
+    <div class="container">
+        <h4>Conoce los roles con los que impulsamos tus activos digitales</h4>
+    </div>
+</div>
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
+@defer (on viewport) {
 <div class="row container">
     <div class="col-xl-6 col-sm-12 card">
         <app-card-info img="../../assets/images/cards/card9.png"

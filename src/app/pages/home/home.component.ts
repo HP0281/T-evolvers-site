@@ -6,15 +6,17 @@ import { CardBannerComponent } from '../../molecules/card-banner/card-banner.com
 import { BannerComponent } from '../../molecules/banner/banner.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { SwiperComponent } from '../../organisms/swiper/swiper.component';
+import { TextContainerComponent } from '../../atoms/text-container/text-container.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatDividerModule, CardSimpleComponent, CardWeComponent, CardBannerComponent, BannerComponent, MatProgressSpinnerModule, SwiperComponent],
+  imports: [MatDividerModule, CardSimpleComponent, CardWeComponent, CardBannerComponent, BannerComponent, MatProgressSpinnerModule, SwiperComponent, TextContainerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
 
   images = ["../../../assets/images/logos/nequi.png",
       "../../../assets/images/logos/celsia.png",
