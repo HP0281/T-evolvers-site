@@ -20,7 +20,9 @@ export class HomeComponent {
       "../../../assets/images/logos/celsia.png",
       "../../../assets/images/logos/sistecredito.png",
       "../../../assets/images/logos/bancolombia.png",
-      "../../../assets/images/logos/nequi.png"
+      "../../../assets/images/logos/Logo_Renting_Colombia.png",
+      "../../../assets/images/logos/Logo-ENERBIT.png",
+      "../../../assets/images/logos/logo_muverang.png"
     ];
   public download(event:any){
     console.log(event)
