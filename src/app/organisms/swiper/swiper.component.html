@@ -1,7 +1,7 @@
 <section>
     <button (click)="back()" class="back"><img src="../../../assets/icons/back.svg" alt=""></button>
     <div class="contain">
-        <swiper-container css-mode="true" autoplay-delay="1500" class="swiperCarrusel" 
+        <swiper-container loop="true" navigation="false"  class="swiperCarrusel" autoplay-delay="1500" autoplay-disable-on-interaction="false"
              init="false" #swiper>
              @for (image of images; track $index) {
                  <swiper-slide>
