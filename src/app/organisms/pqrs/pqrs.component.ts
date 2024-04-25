@@ -33,7 +33,6 @@ export class PqrsComponent {
     interests: ["", Validators.required],
     message: ["", [Validators.required, Validators.maxLength(256)]]
 
-
   });
 
   constructor(private fb: FormBuilder,
@@ -47,7 +46,6 @@ export class PqrsComponent {
   public sendPQRS() {
     
     if (this.pqrsForm.valid) {
-      console.log('sendPqrs', this.pqrsForm.value);
       this.pqrsService.registerPQRS(this.pqrsForm.value).subscribe(
         (res) => {
           this.pqrsForm.reset();

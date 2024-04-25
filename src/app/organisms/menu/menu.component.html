@@ -4,14 +4,15 @@
     </div>
     <div class="links">
         <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
-        <a href="#">Servicios</a>
+        <a [matMenuTriggerFor]="services">Servicios</a>
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Clientes</a>
-        <a href="#">Quienes Somos</a>
+        <a href="#we">Quienes Somos</a>
         <a [routerLink]="['/jobs']" routerLinkActive="router-link-active" >Empleos</a>
         <button class="btn-contact">Contáctenos</button>
+
     </div>
     <div class="menu-mobile">
-        <button class="btn-menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="contacto">
+        <button [routerLink]="['url']" routerLinkActive="router-link-active"  fragment="contact-pqrs" class="btn-menu" mat-icon-button aria-label="contacto">
             <img src="assets/icons/envelope-icon.svg" alt="contacto">
         </button>
         
@@ -19,10 +20,10 @@
             <img src="assets/icons/menu.svg" alt="menu">
         </button>
           <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
-            <button mat-menu-item>
+            <button mat-menu-item [routerLink]="['/home']" routerLinkActive="router-link-active">
               <span>Home</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item [matMenuTriggerFor]="services">
               <span>Servicios</span>
             </button>
             <button mat-menu-item>
@@ -31,9 +32,17 @@
             <button mat-menu-item>
               <span>Quienes Somos</span>
             </button>
-            <button mat-menu-item>
-              <span>Empleos</span>
+            <button mat-menu-item [routerLink]="['/jobs']" routerLinkActive="router-link-active">
+              <span >Empleos</span>
             </button>
+          </mat-menu>
+          <mat-menu #services="matMenu">
+            <button mat-menu-item [routerLink]="['/services/devops']" routerLinkActive="router-link-active">Devops</button>
+            <button mat-menu-item [routerLink]="['/services/automation']" routerLinkActive="router-link-active">QA</button>
+            <button mat-menu-item [routerLink]="['/services/software']" routerLinkActive="router-link-active">Software</button>
+            <button mat-menu-item [routerLink]="['/services/iot']" routerLinkActive="router-link-active">IOT</button>
+            <button mat-menu-item [routerLink]="['/services/observability']" routerLinkActive="router-link-active">Observabilidad</button>
+            <button mat-menu-item [routerLink]="['/services/data']" routerLinkActive="router-link-active">Ingeniería de datos</button>
           </mat-menu>
     </div>
 

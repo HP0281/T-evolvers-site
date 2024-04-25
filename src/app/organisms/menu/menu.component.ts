@@ -1,20 +1,39 @@
-import { Component } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
-import {MatMenuModule} from '@angular/material/menu';
-import { RouterModule } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [MatMenuModule,MatIconModule, RouterModule],
+  imports: [MatMenuModule, MatIconModule, RouterModule,],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
 
-  
+  public url='/';
+
+  constructor(private router: Router,
+    @Inject(DOCUMENT) private document: any) { }
+
+  ngOnInit(): void {
+    
+    this.router.events.subscribe(event => {
+      this.url = this.router.url;
+      if (event instanceof NavigationEnd) {
+        const fragment = this.router.parseUrl(this.url).fragment;
+        if (fragment) {
+          const element = this.document.querySelector(`#${fragment}`);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    });
+  }
 }
+
+
+
