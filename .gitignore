@@ -171,3 +171,8 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+.nx
+.nx/
+
+.DS_Store
+.DS_Store/

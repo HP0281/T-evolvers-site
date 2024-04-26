@@ -1,0 +1,38 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  name: Azure Pipelines
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node 18.x'
+  inputs:
+    versionSpec: 18.x
+
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: FtpUpload@2
+  displayName: 'FTP Upload'
+  inputs:
+    credentialsOption: inputs
+    serverUrl: 'ftp://win5188.site4now.net'
+    username: 'arquefactum-001'
+    password: 'Ardilla2@'
+    rootDirectory: 'dist/te001-angularpage-front/browser/'
+    remoteDirectory: /test
+    enableUtf8: true
+    clean: true
+    preservePaths: true
+
