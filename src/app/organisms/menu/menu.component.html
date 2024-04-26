@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-        <img src="../../../assets/images/logo2.svg" alt="logo">
+        <img src="../../../assets/images/logo2.svg" alt="logo" routerLink="">
     </div>
     <div class="links">
         <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
@@ -39,7 +39,7 @@
           <mat-menu #services="matMenu">
             <button mat-menu-item [routerLink]="['/services/devops']" routerLinkActive="router-link-active">DevOps</button>
             <button mat-menu-item [routerLink]="['/services/automation']" routerLinkActive="router-link-active">QA</button>
-            <button mat-menu-item [routerLink]="['/services/software']" routerLinkActive="router-link-active">Software</button>
+            <button mat-menu-item [routerLink]="['/services/software']" routerLinkActive="router-link-active">Desarrollo Software</button>
             <button mat-menu-item [routerLink]="['/services/iot']" routerLinkActive="router-link-active">IOT</button>
             <button mat-menu-item [routerLink]="['/services/observability']" routerLinkActive="router-link-active">Observabilidad</button>
             <button mat-menu-item [routerLink]="['/services/data']" routerLinkActive="router-link-active">Ingeniería de datos</button>
