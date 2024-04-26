@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-simple',
@@ -14,5 +15,15 @@ export class CardSimpleComponent {
   @Input() title = "";
   @Input() description = "";
   @Input() backgroundImage = true;
+  @Input() path="";
 
+  constructor(private router:Router){
+
+  }
+
+  public redirect(){
+    if(this.path != ""){
+      this.router.navigate([this.path]);
+    }
+  }
 }
