@@ -20,10 +20,10 @@
                 <div class="services link col-xl-4 col-sm-12 col-md-4">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a [href]="'services/software'">Desarrollo de Software</a></li>
-                        <li><a [href]="'services/devops'">Dev SecOps</a></li>
-                        <li><a [href]="'services/iot'">IOT</a></li>
-                        <li><a [href]="'services/automation'">Automatización</a></li>
+                        <li><a [routerLink]="['services/software']" routerLinkActive="router-link-active">Desarrollo de Software</a></li>
+                        <li><a [routerLink]="['services/devops']" routerLinkActive="router-link-active">Dev SecOps</a></li>
+                        <li><a [routerLink]="['services/iot']" routerLinkActive="router-link-active">IOT</a></li>
+                        <li><a [routerLink]="['services/automation']" routerLinkActive="router-link-active">Automatización</a></li>
                     </ul>
                 </div>
                 <div class="links link col-xl-4 col-sm-12 col-md-4">
@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="home#we">Quienes somos</a></li>
                         <li><a href="home#clientes">Nuestros Clientes</a></li>
-                        <li><a href="jobs">Empleos</a></li>
+                        <li><a [routerLink]="['/jobs']">Empleos</a></li>
                         <li><a href="home#contactanos">Contáctenos</a></li>
                     </ul>
                 </div>
