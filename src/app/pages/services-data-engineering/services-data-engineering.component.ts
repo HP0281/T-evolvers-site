@@ -26,4 +26,12 @@ export class ServicesDataEngineeringComponent {
     'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945787/T-evolvers/oduaga8k0no0hm61gwmh.png',
     'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945840/T-evolvers/dsbakctfsqnhvq947jgu.png',
   ];
+  clients = ["assets/images/logos/nequi.png",
+      "assets/images/logos/celsia.png",
+      "assets/images/logos/sistecredito.png",
+      "assets/images/logos/bancolombia.png",
+      "assets/images/logos/Logo_Renting_Colombia.png",
+      "assets/images/logos/Logo-ENERBIT.png",
+      "assets/images/logos/logo_muverang.png"
+    ];
 }

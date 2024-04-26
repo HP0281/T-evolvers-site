@@ -1,4 +1,4 @@
-
+@import './../../../settings/settings.scss';
 .row{
     justify-content: center;
   }
@@ -19,6 +19,28 @@
         height: 610px;
     }
 }
+
+.clients-content{
+    min-width: 80%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.clients-title{
+    width: 70%;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        color: $blue-1;
+        font-size: 52px;
+        font-weight: 400;
+    }
+    span{
+        font-weight: 700;
+    }
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .container{
@@ -42,4 +64,6 @@
         justify-content: center;
         margin: 30px 5%;
     }
+
+    
 }
