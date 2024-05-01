@@ -1,6 +1,8 @@
 <section class="col-xxl-12 ">
     <mat-card class="example-card" [ngClass]="{'reverse': invert == true}" >
-        <img mat-card-image [src]="img" alt="">
+        <img mat-card-image [src]="img" alt="" [style]="imgstyle">
+        <img mat-card-image src="../../../assets/icons/logo_white.png" class="logo">
+
         @if (divider){
             <div class="divider"></div>
         }

@@ -17,4 +17,5 @@ export class CardBannerComponent {
   @Input() description: any[]=[];
   @Input() divider = false;
   @Input() invert = false;
+  @Input() imgstyle = "";
 }
