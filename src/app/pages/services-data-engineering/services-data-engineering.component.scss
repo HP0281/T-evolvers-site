@@ -51,10 +51,21 @@
         .cards{
             width: 100%;
         }
+    .cards-1{
+        height: 100%;
+    }
+    .cards-2{
+        height: auto;
+    }
     }
     .title-2{
         h3{
             font-size: 48px;
+        }
+    }
+    .clients-title{
+        h2{
+            font-size: 32px;
         }
     }
  }
@@ -64,6 +75,5 @@
         justify-content: center;
         margin: 30px 5%;
     }
-
     
 }
