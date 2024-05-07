@@ -15,17 +15,12 @@ import { SwiperComponent } from '../../organisms/swiper/swiper.component';
 })
 export class ServicesContinuosTestAutomatiionComponent {
   images = [
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946325/T-evolvers/gitarmwqwwkarwefdg1c.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946364/T-evolvers/hkzfxn7apepewnropjf5.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946414/T-evolvers/ooaiplrjj0e7eaye4ute.avif',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946452/T-evolvers/h3rm4apawxh0qseotakl.svg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946494/T-evolvers/roga7vegdhcitn96fhul.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946540/T-evolvers/dpojt71b6scrudocidyj.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946325/T-evolvers/gitarmwqwwkarwefdg1c.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946364/T-evolvers/hkzfxn7apepewnropjf5.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946414/T-evolvers/ooaiplrjj0e7eaye4ute.avif',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946452/T-evolvers/h3rm4apawxh0qseotakl.svg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946494/T-evolvers/roga7vegdhcitn96fhul.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702946540/T-evolvers/dpojt71b6scrudocidyj.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715110575/serenity-bdd_1_-modified_oh9zr5.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715110182/logo_karate_labs.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715109315/xk6-modified_kdzxcp.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715109148/logo_playwright.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715108923/logo_selenium.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715110848/logo_postman.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715110963/logo_jmeter.png'
   ]
 }

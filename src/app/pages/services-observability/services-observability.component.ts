@@ -16,18 +16,12 @@ import { SwiperComponent } from '../../organisms/swiper/swiper.component';
 export class ServicesObservabilityComponent {
 
   images = [
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944843/T-evolvers/fvbktmomw3zc0n3ibqxq.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944886/T-evolvers/smk8ddfsirdezj7xnuhy.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944930/T-evolvers/e2z4xjl3uzrjj5rbflbm.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944969/T-evolvers/frfmupzlevsrg1qh7tf1.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945014/T-evolvers/zdpmdlonwpfawgrfw69p.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945051/T-evolvers/zxa3obgw7haz5btu7adi.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944843/T-evolvers/fvbktmomw3zc0n3ibqxq.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944886/T-evolvers/smk8ddfsirdezj7xnuhy.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944930/T-evolvers/e2z4xjl3uzrjj5rbflbm.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702944969/T-evolvers/frfmupzlevsrg1qh7tf1.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945014/T-evolvers/zdpmdlonwpfawgrfw69p.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702945051/T-evolvers/zxa3obgw7haz5btu7adi.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715112243/logo_datadog.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715112136/dynatrace-logo.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715112017/logo_opentelemetry.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715111810/logo_prometheus.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715111674/logo_grafana.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715112457/Elasticsearch_logo.png'
   ];
 
 }
