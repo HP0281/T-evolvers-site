@@ -24,6 +24,7 @@ section{
         }
         img{
             height: 11vw;
+            min-height: 180px;
         }
         mat-card-title-group{
             display: flex;
@@ -90,7 +91,7 @@ section{
     section{
         mat-card{
             img{
-                height: 38.5vw;
+                height: 180px;
             }
             mat-card-title-group{
                 margin: 0 9px 0;
