@@ -16,16 +16,12 @@ import { SwiperComponent } from '../../organisms/swiper/swiper.component';
 export class ServicesDevopsComponent {
 
   images = [
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936382/T-evolvers/myq21wzxkd9etvrijhqm.webp',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936442/T-evolvers/aivbz5zrvpble1pu9ueg.jpg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936496/T-evolvers/agr54ix1nlweaojhvlc0.jpg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936536/T-evolvers/sczqus46cloqd94tb9wr.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936343/T-evolvers/t9otoivo3ipnnelhrwnk.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936382/T-evolvers/myq21wzxkd9etvrijhqm.webp',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936442/T-evolvers/aivbz5zrvpble1pu9ueg.jpg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936496/T-evolvers/agr54ix1nlweaojhvlc0.jpg',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936536/T-evolvers/sczqus46cloqd94tb9wr.png',
-    'https://res.cloudinary.com/dodrsbl4f/image/upload/v1702936343/T-evolvers/t9otoivo3ipnnelhrwnk.png'
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715097251/github-actions.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715100893/logo_terraform.webp',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715098689/logo-sonar_jcyivw.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715099598/logo_snyk.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715100412/logo_gitlabs.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715100260/logo_azure_devops.png',
+    'https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715099809/logo_jenkins.png'
   ]
-
 }

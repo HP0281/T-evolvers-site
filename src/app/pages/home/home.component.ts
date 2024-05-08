@@ -19,7 +19,6 @@ export class HomeComponent {
 
 
   images = ["../../../assets/images/logos/nequi.png",
-      "../../../assets/images/logos/celsia.png",
       "../../../assets/images/logos/sistecredito.png",
       "../../../assets/images/logos/bancolombia.png",
       "../../../assets/images/logos/Logo_Renting_Colombia.png",
