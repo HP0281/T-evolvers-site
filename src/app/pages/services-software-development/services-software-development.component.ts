@@ -15,11 +15,12 @@ import { SwiperComponent } from '../../organisms/swiper/swiper.component';
 })
 export class ServicesSoftwareDevelopmentComponent {
 
-  images = ["../../../assets/images/logos/python.png",
-      "../../../assets/images/logos/net.png",
-      "../../../assets/images/logos/go.png",
-      "../../../assets/images/logos/react.png",
-      "../../../assets/images/logos/angular.png",
-      "../../../assets/images/logos/spring.png"
+  images = [
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093004/python_rgawr2.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093004/net_lk9p5m.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093003/go_ijcito.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093004/react_tuy9y8.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093003/angular-gray_ciwan2.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1715093006/spring-gray_epmdfq.png"
     ];
 }

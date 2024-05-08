@@ -146,6 +146,16 @@ h2{
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
+    .title-2{
+      h4{
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      h3{
+        margin-top: 20px;
+          margin-bottom: 20px;
+      }
+    }
   }
   
   @media only screen and (min-width: 768px) {
@@ -249,5 +259,19 @@ h2{
 .content-swiper{
   margin: 50px 0;
 }
-
+.title-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  h4{
+      max-width: 916px;
+      line-height: 50px;
+      font-weight: 400;
+  }
+  h3{
+    max-width: 916px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+}
 
