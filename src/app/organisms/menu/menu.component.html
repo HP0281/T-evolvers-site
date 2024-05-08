@@ -3,11 +3,11 @@
         <img src="../../../assets/images/logo2.svg" alt="logo" routerLink="">
     </div>
     <div class="links">
-        <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
-        <a [matMenuTriggerFor]="services">Servicios</a>
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+        <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}">Servicios</a>
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Clientes</a>
         <a href="#we">Quienes Somos</a>
-        <a [routerLink]="['/jobs']" routerLinkActive="router-link-active" >Empleos</a>
+        <a [routerLink]="['/jobs']" routerLinkActive="router-link-active">Empleos</a>
         <button class="btn-contact">Contáctenos</button>
 
     </div>

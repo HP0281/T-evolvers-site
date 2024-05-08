@@ -1,10 +1,16 @@
-
+@defer (on viewport){
+    <div class="row">
+        <app-banner title="Transformamos el proceso de software" img="banner-jobs.png" labelButton="Portal de empleos"
+            (action)="jobsPortal($event)">
+        </app-banner>
+    </div>
+    
+}@placeholder {
+    <div class="spinner">
+        <mat-spinner></mat-spinner>
+    </div>
+}
 @defer (on viewport) {
-<div class="row">
-    <app-banner title="Transformamos el proceso de software" img="banner-jobs.png" labelButton="Portal de empleos"
-        (action)="jobsPortal($event)">
-    </app-banner>
-</div>
 <div class="row container">
     <h2>Empleos</h2>
 </div>
