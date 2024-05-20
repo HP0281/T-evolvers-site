@@ -6,7 +6,8 @@ import { CardBannerComponent } from '../../molecules/card-banner/card-banner.com
 import { BannerComponent } from '../../molecules/banner/banner.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { SwiperComponent } from '../../organisms/swiper/swiper.component';
-import { Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -25,8 +26,23 @@ export class HomeComponent {
       "../../../assets/images/logos/Logo-ENERBIT.png",
       "../../../assets/images/logos/logo_muverang.png"
     ];
-  constructor(private router:Router){
+  constructor(private router:Router,
+    private route: ActivatedRoute,){
 
+  }
+
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      const tree = this.router.parseUrl(this.router.url);
+      if (tree.fragment) {
+        const element = document.getElementById(tree.fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
   }
   public download(event:any){
     window.open('https://drive.google.com/file/d/1CqbLm7zMrga0Q6Jmu0jrTYdyZatwfT2y/view','_blank');

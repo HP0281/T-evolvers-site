@@ -29,10 +29,10 @@
                 <div class="links link col-xl-4 col-sm-12 col-md-4">
                     <h4>Links</h4>
                     <ul>
-                        <li><a href="home#we">Quienes somos</a></li>
-                        <li><a href="home#clientes">Nuestros Clientes</a></li>
+                        <li><a [routerLink]="['home']"  fragment="we">Quienes somos</a></li>
+                        <li><a [routerLink]="['home']" fragment="clientes">Nuestros Clientes</a></li>
                         <li><a [routerLink]="['/jobs']">Empleos</a></li>
-                        <li><a href="home#contactanos">Contáctenos</a></li>
+                        <li><a [routerLink]="[url]" fragment="contactanos">Contáctenos</a></li>
                     </ul>
                 </div>
                 <div class="contact link col-xl-4 col-sm-12 col-md-4">

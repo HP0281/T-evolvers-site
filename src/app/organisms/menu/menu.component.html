@@ -5,10 +5,10 @@
     <div class="links">
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
         <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}">Servicios</a>
-        <a [routerLink]="['/home']" routerLinkActive="router-link-active">Clientes</a>
-        <a href="#we">Quienes Somos</a>
+        <a [routerLink]="['home']" fragment="clientes" routerLinkActive="router-link-active">Clientes</a>
+        <a [routerLink]="['home']"  fragment="we">Quienes Somos</a>
         <a [routerLink]="['/jobs']" routerLinkActive="router-link-active">Empleos</a>
-        <button class="btn-contact">Contáctenos</button>
+        <a [routerLink]="[url]" fragment="contactanos"><button class="btn-contact">Contáctenos</button></a>
 
     </div>
     <div class="menu-mobile">
