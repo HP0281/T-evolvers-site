@@ -71,13 +71,12 @@
         <mat-spinner></mat-spinner>
     </div>
 }
-@defer (on viewport) {
-<div class="row container">
+<div class="row container" id="clientes" #clientes>
     <div class="col-xl-12 col-sm-12 divider">
         <mat-divider></mat-divider>
     </div>
 </div>
-<div class="row container" id="clientes" #clientes>
+<div class="row container" >
     <div class="clientes">
         <h4>Algunas de las empresas que <strong>confían</strong> en <strong>nosotros.</strong></h4>
         <p>En T-Evolvers nos apasiona <strong>transformar y automatizar</strong> de manera única, con eficacia y velocidad el proceso software.
@@ -86,18 +85,12 @@
     </div>
     <app-swiper [images]="images"></app-swiper>
 </div>
-<div class="row container">
-    <div class="col-xl-12 col-sm-12 divider">
+<div class="row container" >
+    <div class="col-xl-12 col-sm-12 divider" id="we" #we>
         <mat-divider></mat-divider>
     </div>
 </div>
-}@placeholder {
-    <div class="spinner">
-        <mat-spinner></mat-spinner>
-    </div>
-}
-@defer (on viewport) {
-<div class="row container" id="we" #we>
+<div class="row container">
     <h2>Nosotros</h2>
 </div>
 <div class="row container">
@@ -133,11 +126,6 @@
                 {text: 'e innovador para nuestros clientes y comunidades. ', style: ''}]"></app-card-we>
     </div>
 </div>
-}@placeholder {
-    <div class="spinner">
-        <mat-spinner></mat-spinner>
-    </div>
-}
 @defer (on viewport) {
 <div class="row container">
     <div class="col-xl-12">
