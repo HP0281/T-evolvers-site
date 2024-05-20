@@ -4,7 +4,7 @@
     </div>
     <div class="links">
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}">Servicios</a>
+        <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}" #serviceTrigger="matMenuTrigger" (mouseover)="openMenuServices()" (mouseleave)="closeMenuServices()">Servicios</a>
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Clientes</a>
         <a href="#we">Quienes Somos</a>
         <a [routerLink]="['/jobs']" routerLinkActive="router-link-active">Empleos</a>

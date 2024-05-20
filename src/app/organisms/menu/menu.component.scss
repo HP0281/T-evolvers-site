@@ -60,6 +60,18 @@ nav{
    font-weight: 900 !important;
 }
 
+::ng-deep .mat-menu-panel {
+    padding: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(0.8);
+  }
+  
+  ::ng-deep .mat-menu-panel.mat-menu-open {
+    opacity: 1;
+    transform: scale(1);
+  }
+
 
 @media only screen and (max-width: 767px) {
     .menu-mobile{
