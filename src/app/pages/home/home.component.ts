@@ -19,12 +19,11 @@ import { filter } from 'rxjs';
 export class HomeComponent {
 
 
-  images = ["../../../assets/images/logos/nequi.png",
-      "../../../assets/images/logos/sistecredito.png",
-      "../../../assets/images/logos/bancolombia.png",
-      "../../../assets/images/logos/Logo_Renting_Colombia.png",
-      "../../../assets/images/logos/Logo-ENERBIT.png",
-      "../../../assets/images/logos/logo_muverang.png"
+  images = ["https://res.cloudinary.com/dhmyzbp7j/image/upload/v1716258825/logos/nequi_ghfaie.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1716258825/logos/sistecredito_de66zo.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1716258825/logos/Logo_Renting_Colombia_pddgux.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1716258825/logos/Logo-ENERBIT_toun4y.png",
+      "https://res.cloudinary.com/dhmyzbp7j/image/upload/v1716258825/logos/logo_muverang_jueyxn.png"
     ];
   constructor(private router:Router,
     private route: ActivatedRoute,){
