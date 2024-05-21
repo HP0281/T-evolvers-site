@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { CardSimpleComponent } from './atoms/card-simple/card-simple.component';
 import { CardWeComponent } from './atoms/card-we/card-we.component';
 import { CardBannerComponent } from './molecules/card-banner/card-banner.component';
@@ -9,25 +9,29 @@ import { MenuComponent } from './organisms/menu/menu.component';
 import { PqrsComponent } from './organisms/pqrs/pqrs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { filter } from 'rxjs';
+import { CookiePopupComponent } from './organisms/cookie-popup/cookie-popup.component';
+import { MatDialog } from '@angular/material/dialog';
+import { CookieConsentService } from './services/cookie/cookie.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CardSimpleComponent, CardWeComponent,
     CardBannerComponent, FooterComponent, CardInfoComponent, CardBannerComponent,
-    MenuComponent, PqrsComponent,
+    MenuComponent, PqrsComponent, CookiePopupComponent,
     HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterContentInit{
+export class AppComponent implements AfterContentInit {
   @ViewChild('contactanos') element!: ElementRef;
   title = 'T-Evolvers';
   constructor(
-    private route: ActivatedRoute,
-    private router: Router){
+    private dialog: MatDialog,
+    private cookieConsentService: CookieConsentService,
+    private router: Router) {
 
-    }
+  }
   ngAfterContentInit(): void {
   }
 
@@ -44,6 +48,17 @@ export class AppComponent implements AfterContentInit{
           }
         }
       }
+    });
+
+    if (!this.cookieConsentService.hasConsent()) {
+      this.openCookieDialog();
+    }
+  }
+
+  public openCookieDialog(): void {
+    this.dialog.open(CookiePopupComponent, {
+      width: '380px',
+      disableClose: true
     });
   }
 }

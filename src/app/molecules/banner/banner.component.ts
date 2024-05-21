@@ -20,7 +20,8 @@ export class BannerComponent implements OnInit {
   @Output() action = new EventEmitter();
 
   ngOnInit(): void {
-    this.img = this.img ? `assets/images/${this.img}`:'assets/images/banner.png';
+    // this.img = this.img ? `assets/images/${this.img}`:'assets/images/banner.png';
+    this.img = this.img ? `${this.img}`:'assets/images/banner.png';
   }
 
 

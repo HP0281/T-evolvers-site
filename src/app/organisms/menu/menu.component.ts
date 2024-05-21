@@ -1,7 +1,7 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
@@ -11,12 +11,17 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent implements OnInit, AfterViewInit {
 
   public url='/';
+  @ViewChild('serviceTrigger') serviceTrigger!:MatMenuTrigger;
 
   constructor(private router: Router,
     @Inject(DOCUMENT) private document: any) { }
+  
+    ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
@@ -37,6 +42,13 @@ export class MenuComponent implements OnInit {
 
   public isActiveRoute(route:string){
     return this.url.includes(route);
+  }
+
+  public openMenuServices(){
+    this.serviceTrigger.openMenu();
+  }
+  public closeMenuServices(){
+    this.serviceTrigger.closeMenu();
   }
 }
 
