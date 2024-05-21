@@ -40,14 +40,14 @@ stages:
 
 - stage: AprobacionManual
   dependsOn: DeployTest
-  condition: succeeded()# task times out in 1 day
+  condition: succeeded()
   jobs:
   - job: Aprobacion
     pool: server
     steps:
     - task: ManualValidation@0
       displayName: 'Aprobación Manual'
-      timeoutInMinutes: 4320 # task times out in 1 day
+      timeoutInMinutes: 4320
       inputs:
         notifyUsers: |
           info@t-evolvers.com
