@@ -4,8 +4,8 @@
     </div>
     <div class="links">
         <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}">Servicios</a>
-        <a [routerLink]="['home']" fragment="clientes" routerLinkActive="router-link-active">Clientes</a>
+        <a [matMenuTriggerFor]="services" [ngClass]="{active: isActiveRoute('/services')}" #serviceTrigger="matMenuTrigger" (mouseover)="openMenuServices()">Servicios</a>
+        <a [routerLink]="['home']" fragment="clientes">Clientes</a>
         <a [routerLink]="['home']"  fragment="we">Quienes Somos</a>
         <a [routerLink]="['/jobs']" routerLinkActive="router-link-active">Empleos</a>
         <a [routerLink]="[url]" fragment="contactanos"><button class="btn-contact">Contáctenos</button></a>
