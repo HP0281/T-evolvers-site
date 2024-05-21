@@ -63,6 +63,20 @@ stages:
     pool:
       name: Azure Pipelines
     steps:
+    - task: NodeTool@0
+      displayName: 'Use Node 18.x'
+      inputs:
+        versionSpec: 18.x
+    - task: Npm@1
+      displayName: 'npm install'
+      inputs:
+        verbose: false
+    - task: Npm@1
+      displayName: 'npm build'
+      inputs:
+        command: custom
+        verbose: false
+        customCommand: 'run build'
     - task: FtpUpload@2
       displayName: 'FTP Upload'
       inputs:
