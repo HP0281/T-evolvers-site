@@ -6,7 +6,7 @@
                 <div class="col-xl-6 col-sm-12 col-md-6">
                     <mat-form-field color="accent" [floatLabel]="'always'">
                         <mat-label>Nombre y Apellidos:</mat-label>
-                        <input formControlName="name" matInput>
+                        <input formControlName="name" placeholder="Nombre y Apellidos" matInput>
                     </mat-form-field>
                    
                         <p class="error">{{isInvalidField('name')}}</p>
@@ -15,7 +15,7 @@
                 <div class="col-xl-6 col-sm-12 col-md-6">
                     <mat-form-field color="accent" [floatLabel]="'always'">
                         <mat-label>WhatsApp:</mat-label>
-                        <input formControlName="phone" type="tel" matInput>
+                        <input formControlName="phone" type="tel" matInput placeholder="Número de WhatsApp">
                     </mat-form-field>
                     <p class="error">{{isInvalidField('phone')}}</p>
                 </div>
@@ -24,7 +24,7 @@
                 <div class="col-xl-6 col-sm-12 col-md-6">
                     <mat-form-field color="accent" [floatLabel]="'always'">
                         <mat-label>Correo Electrónico:</mat-label>
-                        <input formControlName="email" matInput>
+                        <input formControlName="email" placeholder="Correo Electrónico" matInput>
                     </mat-form-field>
                     <p class="error">{{isInvalidField('email')}}</p>
                 </div>
@@ -39,7 +39,7 @@
                 <div class="col-xl-6 col-sm-12 col-md-6">
                     <mat-form-field color="accent" [floatLabel]="'always'">
                         <mat-label>Ciudad:</mat-label>
-                        <input formControlName="city" matInput>
+                        <input formControlName="city" matInput placeholder="Ciudad">
                     </mat-form-field>
                     <p class="error">{{isInvalidField('city')}}</p>
                 </div>
@@ -61,7 +61,8 @@
                     <mat-form-field color="accent" [floatLabel]="'always'">
                         <mat-label>Mensaje:</mat-label>
                         <textarea formControlName="message" matInput cdkTextareaAutosize maxlength="256"
-                            cdkAutosizeMinRows="3" cdkAutosizeMaxRows="3" resizeToFitContent="false"></textarea>
+                            cdkAutosizeMinRows="3" cdkAutosizeMaxRows="3" resizeToFitContent="false"
+                            placeholder="Mensaje"></textarea>
                     </mat-form-field>
                     <p class="error">{{isInvalidField('message')}}</p>
                 </div>
