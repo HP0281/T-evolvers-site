@@ -5,7 +5,7 @@ trigger:
 
 
 stages: 
-- stage: Deploy_Test
+- stage: DeployTest
   jobs:
   - job: Test
     pool:
@@ -38,8 +38,8 @@ stages:
         clean: true
         preservePaths: true
 
-- stage: Aprobacion_Manual
-  dependsOn: Deploy_Test
+- stage: AprobacionManual
+  dependsOn: DeployTest
   condition: succeeded()
   jobs:
   - job: Aprobacion
@@ -53,8 +53,8 @@ stages:
         onTimeout: 'resume'
 
 
-- stage: Deploy PDN
-  dependsOn: Aprobacion_Manual
+- stage: DeployPDN
+  dependsOn: AprobacionManual
   condition: succeeded()
   jobs:
   - job: PDN
