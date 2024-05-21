@@ -26,10 +26,10 @@
             <button mat-menu-item [matMenuTriggerFor]="services">
               <span>Servicios</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item [routerLink]="['home']" fragment="clientes">
               <span>Clientes</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item [routerLink]="['home']"  fragment="we">
               <span>Quienes Somos</span>
             </button>
             <button mat-menu-item [routerLink]="['/jobs']" routerLinkActive="router-link-active">
