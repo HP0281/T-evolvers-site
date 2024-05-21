@@ -10,6 +10,6 @@ export class PqrsService {
   constructor(private http:HttpClient) { }
 
   public registerPQRS(body:any):Observable<any>{
-    return this.http.post('https://formspree.io/f/xbjnryya',body);
+    return this.http.post('https://formspree.io/f/xvoenkzz',body);
   }
 }
