@@ -40,17 +40,19 @@ stages:
 
 - stage: AprobacionManual
   dependsOn: DeployTest
-  condition: succeeded()
+  condition: succeeded()# task times out in 1 day
   jobs:
   - job: Aprobacion
+    pool: server
     steps:
     - task: ManualValidation@0
-      timeoutInMinutes: 1440 # task times out in 1 day
+      displayName: 'Aprobación Manual'
+      timeoutInMinutes: 4320 # task times out in 1 day
       inputs:
         notifyUsers: |
           info@t-evolvers.com
         instructions: 'Verificar y aprobar el paso a PDN'
-        onTimeout: 'resume'
+        onTimeout: 'reject'
 
 
 - stage: DeployPDN
