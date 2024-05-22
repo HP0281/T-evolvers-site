@@ -1,7 +1,7 @@
 @import "../../../settings/colors.scss";
 
 section{
-    height: 100%;
+    height: auto;
     .example-card:hover{
         transform: scale(1,1.01);
         cursor: pointer;
