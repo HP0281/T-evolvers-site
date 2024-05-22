@@ -1,11 +1,16 @@
 @import '../../../settings/settings.scss';
+@import '../../../settings/colors.scss';
 
 .container-img{
     display: flex;
     justify-content: center;
     img{
-        width: 200px;
-    }
+        width: 50px;
+        height: 46px;
+    };
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 .btn-next {
     box-sizing: border-box;
@@ -20,17 +25,17 @@
 }
 
 .title {
-    font-size: 40px;
+    font-size:24px;
     font-weight: 700;
-    line-height: 52px;
     letter-spacing: -0.5px;
     margin: 0;
-    text-align: center;
-    color: #243453;
+    text-align:center;
+    color: $gray-6;
 }
 
 .content {
-    font-size: 20px;
+    font-size: 22px;
     font-family: $titillium-font;
-    margin: 0 0 20px;
+    text-align:center;
+    font-weight: 300;
 }
