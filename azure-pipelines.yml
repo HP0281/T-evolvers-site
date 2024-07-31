@@ -87,5 +87,5 @@ stages:
         rootDirectory: 'dist/te001-angularpage-front/browser/'
         remoteDirectory: /site
         enableUtf8: true
-        clean: true
+        clean: false
         preservePaths: true
